@@ -1,183 +1,124 @@
 <template>
-    <div class="fluid-container">
-        
-<!-- FOOTER START -->
-<div class="footer">
-  <div class="contain">
-  <div class="col">
-    <h1>Company</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
+  <body>
+  <footer class="footer">
+  
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
     </ul>
-  </div>
-  <div class="col">
-    <h1>Products</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
     </ul>
-  </div>
-  <div class="col">
-    <h1>Accounts</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Services</li>
-      <li>Social</li>
-      <li>Get in touch</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Webmail</li>
-      <li>Redeem code</li>
-      <li>WHOIS lookup</li>
-      <li>Site map</li>
-      <li>Web templates</li>
-      <li>Email templates</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Support</h1>
-    <ul>
-      <li>Contact us</li>
-      <li>Web chat</li>
-      <li>Open ticket</li>
-    </ul>
-  </div>
-  <div class="col social">
-    <h1>Social</h1>
-    <ul>
-      
-    </ul>
-  </div>
-<div class="clearfix"></div>
-</div>
-</div>
-<!-- END OF FOOTER -->
-    </div>
+    <p>&copy;2023 Vitor Sienna Alves | All Rights Reserved</p>
+  </footer>
+
+</body>
   </template>
   
   <style scoped>
-/* REMOVE THIS, USE YOUR OWN  */
-html,body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, Sans-serif;
-  
-  background-color: #070617;
-}
-
-/* STYLES SPECIFIC TO FOOTER  */
-.footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    height: auto;
-    background-color: #070617;
-    display: flex;
-  flex-direction: column;
-  min-height: 100px;
-  }
-.footer .col {
-  width: 190px;
-  height: auto;
-  float: left;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  padding: 0px 20px 20px 20px;
-}
-.footer .col h1 {
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-size: 12px;
-  line-height: 17px;
-  padding: 20px 0px 5px 0px;
-  color: rgba(255,255,255,0.2);
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.250em;
-}
-.footer .col ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.footer .col ul li {
-  color: #999999;
-  font-size: 14px;
-  font-family: inherit;
-  font-weight: bold;
-  padding: 5px 0px 5px 0px;
-  cursor: pointer;
-  transition: .2s;
-  -webkit-transition: .2s;
-  -moz-transition: .2s;
-}
-.social ul li {
-  display: inline-block;
-  padding-right: 5px !important;
+  font-family: "Poppins", sans-serif;
 }
 
-.footer .col ul li:hover {
-  color: #ffffff;
-  transition: .1s;
-  -webkit-transition: .1s;
-  -moz-transition: .1s;
+
+
+.footer {
+  position:fixed;
+ bottom:0;
+  width: 100%;
+  background: #080414;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.clearfix {
-  clear: both;
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
 }
-@media only screen and (min-width: 1280px) {
-  .contain {
-    width: 1200px;
-    margin: 0 auto;
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
   }
 }
-@media only screen and (max-width: 1139px) {
-  .contain .social {
-    width: 1000px;
-    display: block;
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
   }
-  .social h1 {
-    margin: 0px;
-  }
-}
-@media only screen and (max-width: 950px) {
-  .footer .col {
-    width: 33%;
-  }
-  .footer .col h1 {
-    font-size: 14px;
-  }
-  .footer .col ul li {
-    font-size: 13px;
-  }
-}
-@media only screen and (max-width: 500px) {
-    .footer .col {
-      width: 50%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
-}
-@media only screen and (max-width: 340px) {
-  .footer .col {
-    width: 100%;
+  100% {
+    background-positon-x: 0px;
   }
 }
   </style>
