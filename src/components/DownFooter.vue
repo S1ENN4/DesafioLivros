@@ -43,17 +43,19 @@
 
 
 .footer {
- 
   bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
   width: 100%;
   background: #080414;
-  min-height: 100px;
-  padding: 20px 50px;
+  min-height: 80px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  z-index: 999; /* add z-index to make sure it's on top of other elements */
+
 }
 
 

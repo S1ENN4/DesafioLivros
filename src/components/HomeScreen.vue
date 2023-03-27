@@ -51,7 +51,6 @@
   max-width: 38%;
   height: 30%;
   margin: 1% auto;
-  margin-bottom: 20px;
   width: 100%;
   padding: 20px;
   border-radius: 10px;
@@ -129,10 +128,6 @@ button{
 }
 
 
-.container {
-  position: relative;
-  padding-bottom: 100px; /* add padding to the bottom */
-}
 
 
 
