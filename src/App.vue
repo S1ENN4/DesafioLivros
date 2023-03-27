@@ -121,7 +121,7 @@ body {
   margin-top: 60px;
   margin-bottom: 60px;
   position:static;
-  min-height: 800px;
+  min-height: 950px;
 }
 
 

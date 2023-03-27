@@ -56,7 +56,7 @@
     right:0;
   }
   .menu-btn{
-    position: absolute;
+    position: fixed;
     z-index: 2;
     right: 20px;
     /*left: 20px; */
