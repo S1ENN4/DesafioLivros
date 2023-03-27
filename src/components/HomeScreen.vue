@@ -128,4 +128,12 @@ button{
   
 }
 
+
+.container {
+  position: relative;
+  padding-bottom: 100px; /* add padding to the bottom */
+}
+
+
+
 </style>

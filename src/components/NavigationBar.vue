@@ -13,11 +13,8 @@
     <div class="wrapper">
       <ul>
 <li><a href="/">Home</a></li>
-<li><a href="/cadastrar-livro">Cadastrar</a></li>
-<li><a href="/listar-livros">Listar</a></li>
-<li><a href="/deletar-livros">Deletar</a></li>
-<li><a href="/listar-id">Detalhar</a></li>
-<li><a href="/listar-disponiveis">Disponibilidade</a></li>
+
+
 </ul>
 </div>
 <div class="content">
